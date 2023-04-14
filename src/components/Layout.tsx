@@ -1,7 +1,14 @@
-import React from 'react'
+import React from "react"
 
-export default function Layout() {
+interface LayoutProps {
+  children: JSX.Element
+  className?: string
+}
+
+export default function Layout({ children, className = "" }: LayoutProps): JSX.Element {
   return (
-    <div>Layout</div>
+    <div className={`w-full h-full inline-block z-0 bg-light p-32 ${className}`}>
+      {children}
+    </div>
   )
 }
