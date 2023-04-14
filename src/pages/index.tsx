@@ -12,7 +12,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-light'>
+      <main className='flex items-center text-dark w-full min-h-screen'>
         Home
       </main>
     </>

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 // Framer Motion vars
 const MotionLink = motion(Link)
 
-export default function Logo() {
+export default function Logo(): JSX.Element {
   return (
     <div className='flex justify-center items-center mt-2'>
       <MotionLink
