@@ -5,6 +5,7 @@ import landingPicture from '../../public/images/svg/programming_person.svg'
 import TextAnimation from '@/components/TextAnimation'
 import Link from 'next/link'
 import { EmailIcon, LinkArrow } from '@/components/Icons'
+import SpinLogo from '@/components/SpinLogo'
 
 export default function Home() {
   return (
@@ -42,6 +43,8 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+
+        <SpinLogo />
       </main>
     </>
   )
