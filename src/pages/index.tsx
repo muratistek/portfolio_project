@@ -1,10 +1,10 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
 import landingPicture from '../../public/images/svg/programming_person.svg'
-
-const inter = Inter({ subsets: ['latin'] })
+import TextAnimation from '@/components/TextAnimation'
+import Link from 'next/link'
+import { EmailIcon, LinkArrow } from '@/components/Icons'
 
 export default function Home() {
   return (
@@ -21,11 +21,24 @@ export default function Home() {
             <div className='w-1/2'>
               <Image src={landingPicture} alt='Murat Istek' className='w-full h-auto' />
             </div>
-            <div>
-              <h1>Crafting Digital Experiences Using Coding and Design Skills</h1>
-              <p>
-
+            <div className='flex flex-col w-1/2 items-center self-center pl-8'>
+              <TextAnimation text='Crafting Digital Experiences Using Coding and Design Skills' className='!text-6xl text-left' />
+              <p className='my-4 font-medium text-xl'>
+                Hi! My name is Murat Istek and I am a full-stack web developer who enjoys building complex projects using expertise in web technologies and passion to improve my craft everyday. Let&apos;s work together!
               </p>
+              <div className='flex items-center self-start mt-4 w-full'>
+                <Link
+                  href="/test_file_resume.pdf"
+                  target={'_blank'}
+                  className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark'
+                  download={true}
+                >Resume<LinkArrow className={"w-6 ml-1"} /></Link>
+                <Link
+                  href="mailto:istekmurat1996@gmail.com"
+                  target={'_blank'}
+                  className='ml-6 flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark'
+                >Contact<EmailIcon className={"w-6 ml-1 hover:fill-dark"} /></Link>
+              </div>
             </div>
           </div>
         </Layout>
