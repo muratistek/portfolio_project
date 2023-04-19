@@ -14,6 +14,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        circularSpinLight: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px, #f5f5f5 100px);'
       },
       fontFamily: {
         mont: ['var(--font-montserrat)', ...fontFamily.sans],
@@ -26,7 +27,7 @@ module.exports = {
       },
       animation: {
         'spin-slow': "spin 9s linear infinite",
-      }
+      },
     },
   },
   plugins: [],

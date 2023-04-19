@@ -23,7 +23,7 @@ export default function Home() {
               <Image src={landingPicture} alt='Murat Istek' className='w-full h-auto' />
             </div>
             <div className='flex flex-col w-1/2 items-center self-center pl-8'>
-              <TextAnimation text='Crafting Digital Experiences Using Coding and Design Skills' className='!text-6xl text-left' />
+              <TextAnimation text='Crafting Digital Experiences Using Coding and Design' className='!text-6xl text-left' />
               <p className='my-4 font-medium text-xl'>
                 Hi! My name is Murat Istek and I am a full-stack web developer who enjoys building complex projects using expertise in web technologies and a passion for improving my craft every day. Let&apos;s work together!
               </p>
