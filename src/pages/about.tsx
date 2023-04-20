@@ -22,13 +22,13 @@ export default function about() {
               <h2 className='mb-4 text-lg uppercase text-dark/75 font-bold'>About Me</h2>
               <div className='font-medium'>
                 <p>
-                  Hi, my name is Murat Istek and I am a full-stack developer who enjoys building attractive and complex applications using critical thinking, attention to detail, creativity and knowledge. Using my experience in the field and aspiration for perfection, I always look for the best and latest solutions to meet the needs of businesses and users alike.
+                  Hi, my name is <b>Murat Istek</b> and I am a <b>full-stack developer</b> who enjoys building attractive and complex applications using critical thinking, attention to detail, creativity and knowledge. Using my experience in the field and aspiration for perfection, I always look for the best and latest solutions to meet the needs of businesses and users alike.
                 </p>
                 <p className='my-4'>
                   As a developer who worked with various dev teams, I believe that open communication, empathy and kindness create an environment of prosperity to handle any business problem successfully.
                 </p>
                 <p>
-                  Having worked with wide-range of technologies such as JavaScript, TypeScript, React, SQL, NoSQL, REST API, GraphQL, Angular, C#, Python, Java and PHP allows me to handle any specific tech requirement for every project. I look forward to contributing my skills and passion to your next project.
+                  Having worked with wide-range of technologies such as <b>JavaScript, TypeScript, React, SQL, NoSQL, REST API, GraphQL, Angular, C#, Python, Java and PHP</b> allows me to handle any specific tech requirement for every project. I look forward to contributing my skills and passion to your next project.
                 </p>
               </div>
             </div>
