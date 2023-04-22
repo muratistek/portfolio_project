@@ -64,9 +64,8 @@ export default function about() {
           </div>
 
           <Skills />
-
           <Experience />
-
+          <hr />
           <Education />
         </Layout>
       </main>
