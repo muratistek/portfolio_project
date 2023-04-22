@@ -29,6 +29,10 @@ export default function Skills(): JSX.Element {
         <Skill name="Angular" x="-8vw" y='18vw' />
         <Skill name="Docker" x="28vw" y='2vw' />
         <Skill name="NextJS" x="9vw" y='-4vw' />
+        <Skill name="Figma" x="22vw" y='12vw' />
+        <Skill name="Agile" x="-8vw" y='-18vw' />
+        <Skill name="Scrum" x="-29vw" y='2vw' />
+        <Skill name="C#" x="9vw" y='-18vw' />
       </div>
     </>
   )

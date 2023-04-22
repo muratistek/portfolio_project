@@ -6,6 +6,8 @@ import Image from 'next/image'
 import profileImage from '../../public/images/svg/programming_person.svg'
 import NumberAnimation from '@/components/NumberAnimation'
 import Skills from '@/components/Skills'
+import Experience from '@/components/Experience'
+import Education from '@/components/Education'
 
 export default function about() {
   return (
@@ -36,7 +38,7 @@ export default function about() {
             <div className='col-start-5 col-end-7 w-[450px] h-[450px] mt-8 relative border-2 border-solid border-dark bg-light p-8 rounded-2xl'>
               <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
 
-              <Image src={profileImage} alt='Murat Istek' className='w-full h-full rounded-2xl' />
+              <Image src={profileImage} alt='Murat Istek' className='w-full h-full rounded-2xl' priority={true} />
             </div>
 
             <div className='col-start-7 col-end-9 flex items-end justify-between flex-col'>
@@ -62,6 +64,10 @@ export default function about() {
           </div>
 
           <Skills />
+
+          <Experience />
+
+          <Education />
         </Layout>
       </main>
     </>
