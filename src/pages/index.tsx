@@ -43,8 +43,6 @@ export default function Home() {
             </div>
           </div>
         </Layout>
-
-        <SpinLogo />
       </main>
     </>
   )
