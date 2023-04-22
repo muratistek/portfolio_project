@@ -16,7 +16,7 @@ export default function about() {
         <title>Murat Istek | About Page</title>
         <meta name='description' content='This is an about page of the portfolio website made by Murat Istek using TypeScript, TailwindCSS, React, NextJS, ThreeJS, Framer Motion' />
       </Head>
-      <main className='flex justify-center items-center w-full flex-col'>
+      <main className='flex justify-center items-center w-full flex-col dark:text-light'>
         <Layout className='pt-16'>
           <TextAnimation text='Passion Fuels Purpose' className='mb-16' />
           <div className='grid w-full grid-cols-8 gap-16'>
@@ -46,19 +46,19 @@ export default function about() {
                 <span className='inline-block text-7xl font-bold'>
                   <NumberAnimation value={20} />+
                 </span>
-                <h2 className='font-medium text-xl capitalize text-dark/75'>completed projects</h2>
+                <h2 className='font-medium text-xl capitalize text-dark/75 dark:text-light/75'>completed projects</h2>
               </div>
               <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>
                   <NumberAnimation value={3.99} />
                 </span>
-                <h2 className='font-medium text-xl capitalize text-dark/75'>GPA</h2>
+                <h2 className='font-medium text-xl capitalize text-dark/75 dark:text-light/75'>GPA</h2>
               </div>
               <div className='flex flex-col items-end justify-center'>
                 <span className='inline-block text-7xl font-bold'>
                   <NumberAnimation value={172} />
                 </span>
-                <h2 className='font-medium text-xl capitalize text-dark/75'>Cups of coffee drank</h2>
+                <h2 className='font-medium text-xl capitalize text-dark/75 dark:text-light/75'>Cups of coffee drank</h2>
               </div>
             </div>
           </div>

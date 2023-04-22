@@ -5,7 +5,6 @@ import landingPicture from '../../public/images/svg/programming_person.svg'
 import TextAnimation from '@/components/TextAnimation'
 import Link from 'next/link'
 import { EmailIcon, LinkArrow } from '@/components/Icons'
-import SpinLogo from '@/components/SpinLogo'
 
 export default function Home() {
   return (
@@ -16,7 +15,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='flex items-center text-dark min-h-screen w-full'>
+      <main className='flex items-center text-dark dark:text-light min-h-screen w-full'>
         <Layout className='pt-0'>
           <div className="flex justify-between items-center w-full">
             <div className='w-1/2'>
@@ -31,13 +30,13 @@ export default function Home() {
                 <Link
                   href="/test_file_resume.pdf"
                   target={'_blank'}
-                  className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark'
+                  className='flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light'
                   download={true}
                 >Resume<LinkArrow className={"w-6 ml-1"} /></Link>
                 <Link
                   href="mailto:istekmurat1996@gmail.com"
                   target={'_blank'}
-                  className='ml-6 flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark'
+                  className='ml-6 flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light'
                 >Contact<EmailIcon className={"w-6 ml-1 hover:fill-dark"} /></Link>
               </div>
             </div>

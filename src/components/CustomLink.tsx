@@ -11,7 +11,7 @@ export default function CustomLink({ href, title, className = "" }: CustomLinkPr
     <Link href={href} className={`${className} relative group`}>
       {title}
 
-      <span className={`absolute h-[1px] ${currentPath === href ? "w-full" : "w-0"} inline-block bg-dark -bottom-0.5 left-0 group-hover:w-full transition-[width] ease duration-300`}>&nbsp;</span>
+      <span className={`absolute h-[1px] ${currentPath === href ? "w-full" : "w-0"} inline-block bg-dark dark:bg-light -bottom-0.5 left-0 group-hover:w-full transition-[width] ease-in-out duration-300`}>&nbsp;</span>
     </Link>
   )
 }

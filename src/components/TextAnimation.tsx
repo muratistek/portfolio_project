@@ -39,7 +39,7 @@ export default function TextAnimation({ text, className = "" }: TextAnimationPro
   return (
     <div className='w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden'>
       <motion.h1
-        className={`${className} inline-block text-dark w-full font-bold text-8xl capitalize`}
+        className={`${className} inline-block text-dark dark:text-light w-full font-bold text-8xl capitalize`}
         variants={wholeTextAnimation}
         initial="initialState"
         animate="animateState"
