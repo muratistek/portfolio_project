@@ -19,7 +19,7 @@ export default function Education(): JSX.Element {
 
       <div ref={ref} className='w-[75%] mx-auto relative'>
 
-        <motion.div style={{ scaleY: scrollYProgress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top' />
+        <motion.div style={{ scaleY: scrollYProgress }} className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-light origin-top' />
 
         <ul className='flex flex-col items-start justify-between w-full ml-4'>
           <EducationDetails

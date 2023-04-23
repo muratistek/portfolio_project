@@ -21,7 +21,7 @@ export default function about() {
           <TextAnimation text='Passion Fuels Purpose' className='mb-16' />
           <div className='grid w-full grid-cols-8 gap-16'>
             <div className='col-start-1 col-end-5  flex flex-col items-start justify-start'>
-              <h2 className='mb-4 text-lg uppercase text-dark/75 font-bold'>About Me</h2>
+              <h2 className='mb-4 text-lg uppercase text-dark/75 font-bold dark:text-light/75'>About Me</h2>
               <div className='font-medium'>
                 <p>
                   Hi, my name is <b>Murat Istek</b> and I am a <b>full-stack developer</b> who enjoys building attractive and complex applications using critical thinking, attention to detail, creativity and knowledge. Using my experience in the field and aspiration for perfection, I always look for the best and latest solutions to meet the needs of businesses and users alike.
@@ -35,8 +35,8 @@ export default function about() {
               </div>
             </div>
 
-            <div className='col-start-5 col-end-7 w-[450px] h-[450px] mt-8 relative border-2 border-solid border-dark bg-light p-8 rounded-2xl'>
-              <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark' />
+            <div className='col-start-5 col-end-7 w-[400px] h-[400px] mt-8 relative border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-8 rounded-2xl'>
+              <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light' />
 
               <Image src={profileImage} alt='Murat Istek' className='w-full h-full rounded-2xl' priority={true} />
             </div>

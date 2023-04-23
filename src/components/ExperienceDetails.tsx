@@ -16,11 +16,11 @@ export default function ExperienceDetails({ position, company, time, address, wo
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className='capitalize font-bold text-2xl'>{position}&nbsp;<span className='text-primary capitalize'>@{company}</span></h3>
-        <span className='capitalize font-medium text-dark/75'>
+        <h3 className='capitalize font-bold text-2xl pb-2'>{position}&nbsp;<span className='text-primary capitalize'>@{company}</span></h3>
+        <span className='capitalize font-medium text-dark/75 dark:text-light/75'>
           {time} | {address}
         </span>
-        <ul className='font-medium w-full list-disc'>
+        <ul className='font-medium w-full list-disc pt-2'>
           {
             workPoints.map((point, index) => (
               <li className='ml-3' key={point + (index * Math.floor(Math.random() * 1000000 + 1))}>{point}.</li>

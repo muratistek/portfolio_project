@@ -6,9 +6,9 @@ export default function Skills(): JSX.Element {
   return (
     <>
       <h2 className='font-bold text-8xl mt-64 w-full text-center'>Skills</h2>
-      <div className='flex items-center justify-center w-full h-screen relative rounded-full bg-circularSpinLight'>
+      <div className='flex items-center justify-center w-full h-screen relative rounded-full bg-circularSpinLight dark:bg-circularSpinDark'>
         <motion.div
-          className='flex items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer'
+          className='flex items-center justify-center rounded-full font-semibold bg-dark dark:bg-light text-light dark:text-dark p-8 shadow-dark cursor-pointer'
           whileHover={{ scale: 1.07 }}>
           Web
         </motion.div>
