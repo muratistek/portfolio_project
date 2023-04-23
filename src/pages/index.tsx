@@ -32,7 +32,7 @@ export default function Home() {
             <div className='flex flex-col w-1/2 items-center self-center pl-8'>
               <TextAnimation text='Crafting Digital Experiences Using Coding and Design' className='!text-6xl text-left' />
               <p className='my-4 font-medium text-xl'>
-                Hi! My name is Murat Istek and I am a full-stack web developer who enjoys building complex projects using expertise in web technologies and a passion for improving my craft every day. Let&apos;s work together!
+                Hi! My name is Murat Istek and I am a full-stack developer who enjoys building complex projects using expertise in web technologies and a passion for improving my craft every day. Let&apos;s work together!
               </p>
               <div className='flex items-center self-start mt-4 w-full'>
                 <Link

@@ -30,6 +30,20 @@ module.exports = {
         'spin-slow': "spin 9s linear infinite",
       },
     },
+    screens: {
+      'desktop': { max: "1535px" },
+      // => @media (max-width: 1535px) {...}
+      'laptop': { max: "1280px" },
+      // => @media (max-width: 1280px) {...}
+      'tablet': { max: "1024px" },
+      // => @media (max-width: 1024px) {...}
+      'mini-tablet': { max: "768px" },
+      // => @media (max-width: 768px) {...}
+      'mobile': { max: "640px" },
+      // => @media (max-width: 640px) {...}
+      'mini-mobile': { max: "480px" },
+      // => @media (max-width: 480px) {...}
+    },
   },
   plugins: [],
   darkMode: 'class',

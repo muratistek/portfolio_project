@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from './Logo'
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons'
 import CustomLink from './CustomLink'
@@ -8,9 +8,22 @@ import useThemeSwitch from './hooks/useThemeSwitch'
 
 export default function Navbar(): JSX.Element {
   const [colorMode, setColorMode] = useThemeSwitch()
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleClick = () => {
+    setIsOpen(!isOpen)
+  }
 
   return (
     <header className='font-medium w-full px-32 py-8 flex items-center justify-between dark:text-light'>
+
+      {/* Hamburger Menu - Small Screen */}
+      <button className='flex-col justify-center items-center hidden tablet:flex' onClick={handleClick}>
+        <span className={`bg-dark dark:bg-light block w-6 h-0.5 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'} transition-all duration-300 ease-out`}></span>
+        <span className={`bg-dark dark:bg-light block w-6 h-0.5 my-0.5 rounded-sm ${isOpen ? 'opacity-0' : 'opacity-100'} transition-all duration-300 ease-out`}></span>
+        <span className={`bg-dark dark:bg-light block w-6 h-0.5 rounded-sm ${isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'} transition-all duration-300 ease-out`}></span>
+      </button>
+
       <nav>
         <CustomLink href="/" title='Home' className='mr-4' />
         <CustomLink href="/about" title='About' className='mx-4' />
