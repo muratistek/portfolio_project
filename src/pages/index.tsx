@@ -16,35 +16,35 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className='flex items-center text-dark dark:text-light min-h-screen w-full'>
-        <Layout className='pt-0'>
-          <div className="flex justify-between items-center w-full">
-            <div className='w-1/2'>
+        <Layout className='pt-0 mini-tablet:pt-16 mobile:pt-8'>
+          <div className="flex justify-between items-center w-full tablet:flex-col">
+            <div className='w-1/2 mini-tablet:w-full'>
               <Image
                 src={landingPicture}
                 alt='Murat Istek'
-                className='w-full h-auto'
+                className='w-full h-auto tablet:hidden mini-tablet:inline-block mini-tablet:w-full'
                 priority={true}
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               50vw"
               />
             </div>
-            <div className='flex flex-col w-1/2 items-center self-center pl-8'>
-              <TextAnimation text='Crafting Digital Experiences Using Coding and Design' className='!text-6xl text-left' />
-              <p className='my-4 font-medium text-xl'>
+            <div className='flex flex-col w-1/2 items-center self-center pl-8 tablet:w-full tablet:text-center'>
+              <TextAnimation text='Crafting Digital Experiences Using Coding and Design' className='!text-6xl text-left laptop:!text-5xl tablet:!text-center tablet:!text-6xl mini-tablet:!text-5xl mini-tablet:py-3 mobile:!text-3xl' />
+              <p className='my-4 font-medium text-xl mini-tablet:text-sm mobile:text-xs'>
                 Hi! My name is Murat Istek and I am a full-stack developer who enjoys building complex projects using expertise in web technologies and a passion for improving my craft every day. Let&apos;s work together!
               </p>
-              <div className='flex items-center self-start mt-4 w-full'>
+              <div className='flex items-center self-start mt-4 tablet:self-center'>
                 <Link
                   href="/test_file_resume.pdf"
                   target={'_blank'}
-                  className='flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light'
+                  className='flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light mini-tablet:p-2 mini-tablet:px-4 mini-tablet:text-base'
                   download={true}
                 >Resume<LinkArrow className={"w-6 ml-1"} /></Link>
                 <Link
                   href="mailto:istekmurat1996@gmail.com"
                   target={'_blank'}
-                  className='ml-6 flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light'
+                  className='ml-6 flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light mini-tablet:p-2 mini-tablet:px-4 mini-tablet:text-base'
                 >Contact<EmailIcon className={"w-6 ml-1 hover:fill-dark"} /></Link>
               </div>
             </div>

@@ -15,7 +15,7 @@ export default function Navbar(): JSX.Element {
   }
 
   return (
-    <header className='relative font-medium w-full px-32 py-8 flex items-center justify-between dark:text-light'>
+    <header className='relative font-medium w-full px-32 py-8 flex items-center justify-between dark:text-light z-10 tablet:px-16 mini-tablet:px-12 mobile:px-8'>
 
       {/* Hamburger Menu - Small Screen */}
       <button className='flex-col justify-center items-center hidden tablet:flex' onClick={handleClick}>

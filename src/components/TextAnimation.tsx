@@ -37,7 +37,7 @@ interface TextAnimationProps {
 
 export default function TextAnimation({ text, className = "" }: TextAnimationProps) {
   return (
-    <div className='w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden'>
+    <div className='w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden mobile:py-0'>
       <motion.h1
         className={`${className} inline-block text-dark dark:text-light w-full font-bold text-8xl capitalize`}
         variants={wholeTextAnimation}
