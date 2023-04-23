@@ -15,7 +15,7 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         circularSpinLight: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px, #f5f5f5 100px);',
-        circularSpinDark: 'repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 5px, #1b1b1b 100px);',
+        circularSpinDark: 'repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 7px, #1b1b1b 100px);',
       },
       fontFamily: {
         mont: ['var(--font-montserrat)', ...fontFamily.sans],

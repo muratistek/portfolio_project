@@ -13,9 +13,9 @@ export default function projects() {
     <>
       <Head>
         <title>Murat Istek | Projects Page</title>
-        <meta name='description' content='This is an about page of the portfolio website made by Murat Istek using TypeScript, TailwindCSS, React, NextJS, ThreeJS, Framer Motion' />
+        <meta name='description' content='This is a projects page of the portfolio website made by Murat Istek using TypeScript, TailwindCSS, React, NextJS, ThreeJS, Framer Motion' />
       </Head>
-      <main className='flex flex-col items-center justify-center w-full mb-16'>
+      <main className='flex flex-col items-center justify-center w-full mb-16 dark:text-light'>
         <Layout className='pt-16'>
           <TextAnimation text='My Projects' className='mb-16' />
 

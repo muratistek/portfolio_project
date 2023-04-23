@@ -9,14 +9,10 @@ export default function useThemeSwitch() {
     const mediaQuery = window.matchMedia(darkThemeQuery);
     const userPreference = window.localStorage.getItem('themeColor')
 
-    console.log(userPreference)
-
     const handleThemeChange = () => {
       if (userPreference) {
         let checkColor = userPreference === "dark" ? "dark" : 'light';
         setColorMode(checkColor);
-
-        console.log(checkColor)
 
         if (checkColor === "dark") {
           document.documentElement.classList.add('dark')
@@ -28,8 +24,6 @@ export default function useThemeSwitch() {
       else {
         let checkColor = mediaQuery.matches ? "dark" : 'light'
         setColorMode(checkColor)
-
-        console.log(checkColor)
 
         window.localStorage.setItem("themeColor", checkColor)
 
@@ -51,7 +45,6 @@ export default function useThemeSwitch() {
 
   useEffect(() => {
     if (colorMode) {
-      console.log(colorMode)
       if (colorMode === 'dark') {
         window.localStorage.setItem('themeColor', 'dark');
         document.documentElement.classList.add('dark')
