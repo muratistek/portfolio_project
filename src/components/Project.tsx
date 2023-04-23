@@ -11,7 +11,15 @@ export default function Project({ title, summary, img, link, github }: ProjectPr
       <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light rounded-br-3xl' />
 
       <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
-        <Image src={img} alt={title} className='w-full h-auto' priority={true} />
+        <Image
+          src={img}
+          alt={title}
+          className='w-full h-auto'
+          priority={true}
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              50vw"
+        />
       </Link>
 
       <div className='flex flex-col items-start justify-between pl-6 w-1/2'>

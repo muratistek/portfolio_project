@@ -38,7 +38,15 @@ export default function about() {
             <div className='col-start-5 col-end-7 w-[400px] h-[400px] mt-8 relative border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-8 rounded-2xl'>
               <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light' />
 
-              <Image src={profileImage} alt='Murat Istek' className='w-full h-full rounded-2xl' priority={true} />
+              <Image
+                src={profileImage}
+                alt='Murat Istek'
+                className='w-full h-full rounded-2xl'
+                priority={true}
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+              />
             </div>
 
             <div className='col-start-7 col-end-9 flex items-end justify-between flex-col'>
