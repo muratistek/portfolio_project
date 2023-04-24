@@ -5,10 +5,10 @@ import Skill from './Skill'
 export default function Skills(): JSX.Element {
   return (
     <>
-      <h2 className='font-bold text-8xl mt-64 w-full text-center'>Skills</h2>
-      <div className='flex items-center justify-center w-full h-screen relative rounded-full bg-circularSpinLight dark:bg-circularSpinDark'>
+      <h2 className='font-bold text-8xl mt-64 w-full text-center mini-tablet:text-6xl mini-tablet:mt-32'>Skills</h2>
+      <div className='flex items-center justify-center w-full h-screen relative rounded-full bg-circularSpinLight dark:bg-circularSpinDark tablet:h-[80vh] mobile:h-[60vh] mini-mobile:h-[50vh] tablet:bg-circularSpinLightTablet tablet:dark:bg-circularSpinDarkTablet mini-tablet:bg-circularSpinLightTablet mini-tablet:dark:bg-circularSpinDarkTablet mobile:bg-circularSpinLightTablet mobile:dark:bg-circularSpinDarkTablet'>
         <motion.div
-          className='flex items-center justify-center rounded-full font-semibold bg-dark dark:bg-light text-light dark:text-dark p-8 shadow-dark cursor-pointer'
+          className='flex items-center justify-center rounded-full font-semibold bg-dark dark:bg-light text-light dark:text-dark p-8 shadow-dark cursor-pointer tablet:p-6 mini-tablet:p-4 mini-mobile:text-xs mini-mobile:p-2'
           whileHover={{ scale: 1.07 }}>
           Web
         </motion.div>

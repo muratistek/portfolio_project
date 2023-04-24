@@ -16,6 +16,12 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         circularSpinLight: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px, #f5f5f5 100px);',
         circularSpinDark: 'repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 7px, #1b1b1b 100px);',
+        circularSpinLightTablet: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px, #f5f5f5 80px);',
+        circularSpinDarkTablet: 'repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 7px, #1b1b1b 80px);',
+        circularSpinLightMiniTablet: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px, #f5f5f5 60px);',
+        circularSpinDarkMiniTablet: 'repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 6px, #1b1b1b 60px);',
+        circularSpinLightMobile: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px, #f5f5f5 40px);',
+        circularSpinDarkMobile: 'repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 3px, #1b1b1b 40px);',
       },
       fontFamily: {
         mont: ['var(--font-montserrat)', ...fontFamily.sans],

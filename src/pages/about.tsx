@@ -18,9 +18,9 @@ export default function about() {
       </Head>
       <main className='flex justify-center items-center w-full flex-col dark:text-light'>
         <Layout className='pt-16'>
-          <TextAnimation text='Passion Fuels Purpose' className='mb-16' />
-          <div className='grid w-full grid-cols-8 gap-16'>
-            <div className='col-start-1 col-end-5  flex flex-col items-start justify-start'>
+          <TextAnimation text='Passion Fuels Purpose' className='mb-16 tablet:!text-7xl mobile:!text-6xl mini-mobile:!text-4xl mobile:mb-7' />
+          <div className='grid w-full grid-cols-8 gap-16 mobile:gap-8 '>
+            <div className='col-start-1 col-end-5  flex flex-col items-start justify-start laptop:col-span-4 mini-tablet:order-2 mini-tablet:col-span-8'>
               <h2 className='mb-4 text-lg uppercase text-dark/75 font-bold dark:text-light/75'>About Me</h2>
               <div className='font-medium'>
                 <p>
@@ -35,7 +35,7 @@ export default function about() {
               </div>
             </div>
 
-            <div className='col-start-5 col-end-7 w-[400px] h-[400px] mt-8 relative border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-8 rounded-2xl'>
+            <div className='col-start-5 col-end-7 w-[400px] h-[400px] desktop:w-[330px] desktop:h-[330px] mt-8 relative border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-8 rounded-2xl laptop:col-span-4 mini-tablet:order-1 mini-tablet:col-span-8 mini-tablet:mx-auto'>
               <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light' />
 
               <Image
@@ -49,24 +49,24 @@ export default function about() {
               />
             </div>
 
-            <div className='col-start-7 col-end-9 flex items-end justify-between flex-col'>
-              <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block text-7xl font-bold'>
+            <div className='col-start-7 col-end-9 flex items-end justify-between flex-col laptop:col-span-8 laptop:flex-row laptop:items-center mini-tablet:order-3'>
+              <div className='flex flex-col items-end justify-center laptop:items-center'>
+                <span className='inline-block text-7xl font-bold mini-tablet:text-6xl mobile:text-5xl mini-mobile:text-4xl'>
                   <NumberAnimation value={20} />+
                 </span>
-                <h2 className='font-medium text-xl capitalize text-dark/75 dark:text-light/75'>completed projects</h2>
+                <h2 className='font-medium text-lg desktop:text-base capitalize text-dark/75 dark:text-light/75 laptop:text-center mini-tablet:text-lg mobile:text-base mini-mobile:text-sm'>completed projects</h2>
               </div>
-              <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block text-7xl font-bold'>
+              <div className='flex flex-col items-end justify-center laptop:items-center'>
+                <span className='inline-block text-7xl font-bold mini-tablet:text-6xl mobile:text-5xl mini-mobile:text-4xl'>
                   <NumberAnimation value={3.99} />
                 </span>
-                <h2 className='font-medium text-xl capitalize text-dark/75 dark:text-light/75'>GPA</h2>
+                <h2 className='font-medium text-lg desktop:text-base capitalize text-dark/75 dark:text-light/75 laptop:text-center mini-tablet:text-lg mobile:text-base mini-mobile:text-sm'>GPA</h2>
               </div>
-              <div className='flex flex-col items-end justify-center'>
-                <span className='inline-block text-7xl font-bold'>
+              <div className='flex flex-col items-end justify-center laptop:items-center'>
+                <span className='inline-block text-7xl font-bold mini-tablet:text-6xl mobile:text-5xl mini-mobile:text-4xl'>
                   <NumberAnimation value={172} />
                 </span>
-                <h2 className='font-medium text-xl capitalize text-dark/75 dark:text-light/75'>Cups of coffee drank</h2>
+                <h2 className='font-medium text-lg desktop:text-base capitalize text-dark/75 dark:text-light/75 laptop:text-center mini-tablet:text-lg mobile:text-base mini-mobile:text-sm'>Cups of coffee drank</h2>
               </div>
             </div>
           </div>
