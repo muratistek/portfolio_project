@@ -17,9 +17,9 @@ export default function projects() {
       </Head>
       <main className='flex flex-col items-center justify-center w-full mb-16 dark:text-light'>
         <Layout className='pt-16'>
-          <TextAnimation text='My Projects' className='mb-16' />
+          <TextAnimation text='My Projects' className='mb-16 tablet:!text-7xl mobile:mb-8 mobile:!text-6xl mini-mobile:!text-4xl' />
 
-          <div className='grid grid-cols-12 gap-24 gap-y-28'>
+          <div className='grid grid-cols-12 gap-24 gap-y-28 laptop:gap-x-16 tablet:gap-x-8 mini-tablet:gap-y-24 mobile:gap-x-0'>
             <div className='col-span-12'>
               <Project
                 title='Job Applications Tracker'
