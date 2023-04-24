@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen dark:bg-dark`}>
         <Navbar />
-        <AnimatePresence mode='wait'>
+        <AnimatePresence mode='wait' initial={false}>
           <Component key={router.asPath + (Math.floor(Math.random() * 1000000 + 1))} {...pageProps} />
         </AnimatePresence>
         <Footer />
