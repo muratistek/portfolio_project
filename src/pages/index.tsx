@@ -5,6 +5,7 @@ import landingPicture from '../../public/images/svg/programming_person.svg'
 import TextAnimation from '@/components/TextAnimation'
 import Link from 'next/link'
 import { EmailIcon, LinkArrow } from '@/components/Icons'
+import PageTransitionEffect from '@/components/PageTransitionEffect'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <PageTransitionEffect />
       <main className='flex items-center text-dark dark:text-light min-h-screen w-full'>
         <Layout className='pt-0 mini-tablet:pt-16 mobile:pt-8'>
           <div className="flex justify-between items-center w-full tablet:flex-col">

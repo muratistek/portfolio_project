@@ -8,6 +8,7 @@ import NumberAnimation from '@/components/NumberAnimation'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
+import PageTransitionEffect from '@/components/PageTransitionEffect'
 
 export default function about() {
   return (
@@ -16,6 +17,7 @@ export default function about() {
         <title>Murat Istek | About Page</title>
         <meta name='description' content='This is an about page of the portfolio website made by Murat Istek using TypeScript, TailwindCSS, React, NextJS, ThreeJS, Framer Motion' />
       </Head>
+      <PageTransitionEffect />
       <main className='flex justify-center items-center w-full flex-col dark:text-light'>
         <Layout className='pt-16'>
           <TextAnimation text='Passion Fuels Purpose' className='mb-16 tablet:!text-7xl mobile:!text-6xl mini-mobile:!text-4xl mobile:mb-7' />

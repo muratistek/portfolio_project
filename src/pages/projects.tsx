@@ -5,6 +5,7 @@ import TextAnimation from '../components/TextAnimation'
 import projImage1 from '../../public/images/project/proj1.jpg'
 import SpinLogo from '../components/SpinLogo'
 import Project from '../components/Project'
+import PageTransitionEffect from '@/components/PageTransitionEffect'
 
 
 
@@ -15,6 +16,7 @@ export default function projects() {
         <title>Murat Istek | Projects Page</title>
         <meta name='description' content='This is a projects page of the portfolio website made by Murat Istek using TypeScript, TailwindCSS, React, NextJS, ThreeJS, Framer Motion' />
       </Head>
+      <PageTransitionEffect />
       <main className='flex flex-col items-center justify-center w-full mb-16 dark:text-light'>
         <Layout className='pt-16'>
           <TextAnimation text='My Projects' className='mb-16 tablet:!text-7xl mobile:mb-8 mobile:!text-6xl mini-mobile:!text-4xl' />
