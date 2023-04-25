@@ -21,7 +21,7 @@ const Computers = ({ isMobile = false }) => {
       />
       <primitive
         scale={isMobile ? 0.7 : 1}
-        position={[0, -2.25, -1.5]}
+        position={isMobile ? [0, -3, -2.2] : [0, -2.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
         object={gltf.scene}
       />
@@ -31,23 +31,41 @@ const Computers = ({ isMobile = false }) => {
 
 
 const ComputersCanvas = (): JSX.Element => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    setIsMobile(mediaQuery.matches);
+    const onMediaQueryChange = (event: MediaQueryListEvent) => {
+      setIsMobile(event.matches);
+    };
+    mediaQuery.addEventListener("change", onMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", onMediaQueryChange);
+    };
+  }, []);
   return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<Loader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers />
-      </Suspense>
-      <Preload all />
-    </Canvas>
+    <div style={{ width: "100%", height: "400px", margin: "0px auto" }}>
+      <Canvas
+        className='w-full h-auto tablet:hidden mini-tablet:inline-block mini-tablet:w-full'
+        frameloop="demand"
+        shadows
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+      >
+        <Suspense fallback={<Loader />}>
+          <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Computers isMobile={isMobile} />
+        </Suspense>
+        <Preload all />
+      </Canvas>
+    </div>
+
   )
 }
 
