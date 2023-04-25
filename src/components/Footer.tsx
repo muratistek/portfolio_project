@@ -11,7 +11,7 @@ export default function Footer() {
           target={'_blank'}
         >Source code on GitHub </Link>
         <div className="flex items-center tablet:py-2">
-          <span className='tablet:mx-auto mr-16'>&#169; {new Date().getFullYear()} Murat Istek</span>
+          <span className='tablet:mx-auto mr-28'>&#169; {new Date().getFullYear()} Murat Istek</span>
         </div>
 
         <Link href='/projects' className=' underline underline-offset-2'>My Projects</Link>

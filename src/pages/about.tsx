@@ -9,6 +9,7 @@ import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 import PageTransitionEffect from '@/components/PageTransitionEffect'
+import Tech from '@/components/Tech'
 
 export default function about() {
   return (
@@ -74,6 +75,7 @@ export default function about() {
           </div>
 
           <Skills />
+          <Tech />
           <Experience />
           <hr />
           <Education />
