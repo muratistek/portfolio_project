@@ -23,31 +23,7 @@ export default function Home() {
         <Layout className='pt-0 mini-tablet:pt-16 mobile:pt-8'>
           <div className="flex justify-between items-center w-full tablet:flex-col">
             <div className='w-1/2 mini-tablet:w-full tablet:w-full'>
-              {/* <Image
-                src={landingPicture}
-                alt='Murat Istek'
-                className='w-full h-auto tablet:hidden mini-tablet:inline-block mini-tablet:w-full'
-                priority={true}
-                sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              50vw"
-              /> */}
               <ComputersCanvas />
-              {/* <div className="absolute xs:bottom-0 bottom-32 w-full flex justify-center items-center">
-                <div className="w-[32px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-                  <motion.div
-                    animate={{
-                      y: [0, 24, 0],
-                      transition: {
-                        duration: 1.5,
-                        repeat: Infinity,
-                        repeatType: "loop",
-                      },
-                    }}
-                    className="w-3 h-3 rounded-full bg-secondary mb-1"
-                  />
-                </div>
-              </div> */}
               <div className='w-full flex justify-center items-center tablet:pb-4 tablet:mb-4'>
                 <a href='#'>
                   <div className='w-[64px] h-[12px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 relative'>
