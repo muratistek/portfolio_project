@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { EmailIcon, LinkArrow } from '@/components/Icons'
 import PageTransitionEffect from '@/components/PageTransitionEffect'
 import ComputersCanvas from '../components/canvas/Computers'
+import { motion } from 'framer-motion'
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
       <main className='flex items-center text-dark dark:text-light min-h-screen w-full'>
         <Layout className='pt-0 mini-tablet:pt-16 mobile:pt-8'>
           <div className="flex justify-between items-center w-full tablet:flex-col">
-            <div className='w-1/2 mini-tablet:w-full'>
+            <div className='w-1/2 mini-tablet:w-full tablet:w-full'>
               {/* <Image
                 src={landingPicture}
                 alt='Murat Istek'
@@ -32,6 +33,21 @@ export default function Home() {
               50vw"
               /> */}
               <ComputersCanvas />
+              {/* <div className="absolute xs:bottom-0 bottom-32 w-full flex justify-center items-center">
+                <div className="w-[32px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+                  <motion.div
+                    animate={{
+                      y: [0, 24, 0],
+                      transition: {
+                        duration: 1.5,
+                        repeat: Infinity,
+                        repeatType: "loop",
+                      },
+                    }}
+                    className="w-3 h-3 rounded-full bg-secondary mb-1"
+                  />
+                </div>
+              </div> */}
             </div>
             <div className='flex flex-col w-1/2 items-center self-center pl-8 tablet:w-full tablet:text-center'>
               <TextAnimation text='Crafting Digital Experiences Using Coding and Design' className='!text-6xl text-left laptop:!text-5xl tablet:!text-center tablet:!text-6xl mini-tablet:!text-5xl mini-tablet:py-3 mobile:!text-3xl' />
