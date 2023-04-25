@@ -48,8 +48,25 @@ export default function Home() {
                   />
                 </div>
               </div> */}
+              <div className='w-full flex justify-center items-center tablet:pb-4 tablet:mb-4'>
+                <a href='#'>
+                  <div className='w-[64px] h-[12px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 relative'>
+                    <motion.div
+                      animate={{
+                        x: [-20, 20, -20]
+                      }}
+                      transition={{
+                        duration: 2.5,
+                        repeat: Infinity,
+                        repeatType: 'loop'
+                      }}
+                      className='w-2 h-2 rounded-full bg-secondary mb-1 absolute top-1'
+                    />
+                  </div>
+                </a>
+              </div>
             </div>
-            <div className='flex flex-col w-1/2 items-center self-center pl-8 tablet:w-full tablet:text-center'>
+            <div className='flex flex-col w-1/2 items-center self-center pl-8 tablet:w-full tablet:text-center tablet:mb-96'>
               <TextAnimation text='Crafting Digital Experiences Using Coding and Design' className='!text-6xl text-left laptop:!text-5xl tablet:!text-center tablet:!text-6xl mini-tablet:!text-5xl mini-tablet:py-3 mobile:!text-3xl' />
               <p className='my-4 font-medium text-xl mini-tablet:text-sm mobile:text-xs'>
                 Hi! My name is Murat Istek and I am a full-stack developer who enjoys building complex projects using expertise in web technologies and a passion for improving my craft every day. Let&apos;s work together!
