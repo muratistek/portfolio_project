@@ -6,6 +6,7 @@ import TextAnimation from '@/components/TextAnimation'
 import Link from 'next/link'
 import { EmailIcon, LinkArrow } from '@/components/Icons'
 import PageTransitionEffect from '@/components/PageTransitionEffect'
+import ComputersCanvas from '../components/canvas/Computers'
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         <Layout className='pt-0 mini-tablet:pt-16 mobile:pt-8'>
           <div className="flex justify-between items-center w-full tablet:flex-col">
             <div className='w-1/2 mini-tablet:w-full'>
-              <Image
+              {/* <Image
                 src={landingPicture}
                 alt='Murat Istek'
                 className='w-full h-auto tablet:hidden mini-tablet:inline-block mini-tablet:w-full'
@@ -29,7 +30,8 @@ export default function Home() {
                 sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               50vw"
-              />
+              /> */}
+              <ComputersCanvas />
             </div>
             <div className='flex flex-col w-1/2 items-center self-center pl-8 tablet:w-full tablet:text-center'>
               <TextAnimation text='Crafting Digital Experiences Using Coding and Design' className='!text-6xl text-left laptop:!text-5xl tablet:!text-center tablet:!text-6xl mini-tablet:!text-5xl mini-tablet:py-3 mobile:!text-3xl' />
