@@ -10,6 +10,7 @@ import Experience from '@/components/Experience'
 import Education from '@/components/Education'
 import PageTransitionEffect from '@/components/PageTransitionEffect'
 import Tech from '@/components/Tech'
+import LazyLoad from 'react-lazy-load'
 
 export default function about() {
   return (
@@ -75,7 +76,9 @@ export default function about() {
           </div>
 
           <Skills />
-          <Tech />
+          <LazyLoad>
+            <Tech />
+          </LazyLoad>
           <Experience />
           <hr />
           <Education />
