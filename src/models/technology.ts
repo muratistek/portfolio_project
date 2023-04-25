@@ -1,5 +1,6 @@
 import { StaticImageData } from "next/image";
 
+// Icons Import
 import css from "../../public/assets/tech/css.png";
 import docker from "../../public/assets/tech/docker.png";
 import figma from "../../public/assets/tech/figma.png";
