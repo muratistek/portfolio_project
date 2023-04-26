@@ -62,7 +62,7 @@ export default function about() {
               </div>
               <div className='flex flex-col items-end justify-center laptop:items-center'>
                 <span className='inline-block text-7xl font-bold mini-tablet:text-6xl mobile:text-5xl mini-mobile:text-4xl'>
-                  <NumberAnimation value={3.99} />
+                  <NumberAnimation value={3.98} />
                 </span>
                 <h2 className='font-medium text-lg desktop:text-base capitalize text-dark/75 dark:text-light/75 laptop:text-center mini-tablet:text-lg mobile:text-base mini-mobile:text-sm'>GPA</h2>
               </div>

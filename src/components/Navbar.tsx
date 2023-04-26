@@ -123,7 +123,7 @@ export default function Navbar(): JSX.Element {
         </motion.div>}
 
       <div className='absolute left-[50%] top-2 translate-x-[-50%] duration-500'>
-        <Logo />
+        <Logo colorTheme={colorMode} />
       </div>
 
       <Script id='nav-scroll' strategy='afterInteractive'>
