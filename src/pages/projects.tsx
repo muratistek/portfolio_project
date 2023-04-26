@@ -14,7 +14,7 @@ export default function projects() {
     <>
       <Head>
         <title>Murat Istek | Projects Page</title>
-        <meta name='description' content='This is a projects page of the portfolio website made by Murat Istek using TypeScript, TailwindCSS, React, NextJS, ThreeJS, Framer Motion' />
+        <meta name='description' content='This is a projects page of the portfolio website made by Murat Istek using TypeScript, TailwindCSS, React, NextJS, ThreeJS, Framer Motion. This page showcases my significant projects that have source code links and link to the project itself. There is also animated "Hire Me" button. Let&#39;s work together!' />
       </Head>
       <PageTransitionEffect />
       <main className='flex flex-col items-center justify-center w-full mb-16 dark:text-light'>

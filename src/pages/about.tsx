@@ -17,7 +17,7 @@ export default function about() {
     <>
       <Head>
         <title>Murat Istek | About Page</title>
-        <meta name='description' content='This is an about page of the portfolio website made by Murat Istek using TypeScript, TailwindCSS, React, NextJS, ThreeJS, Framer Motion' />
+        <meta name='description' content='This is an about page of the portfolio website made by Murat Istek using TypeScript, TailwindCSS, React, NextJS, ThreeJS, Framer Motion. This page shows the information about me, 3d models, framer motion animations, my experience and my education. Let&#39;s work together!' />
       </Head>
       <PageTransitionEffect />
       <main className='flex justify-center items-center w-full flex-col dark:text-light'>

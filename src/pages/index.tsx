@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Head>
         <title>Portfolio Website | Murat Istek</title>
-        <meta name='description' content='Portfolio Website made by Murat Istek using TypeScript, TailwindCSS, React, NextJS, ThreeJS, Framer Motion' />
+        <meta name='description' content='Portfolio Website made by Murat Istek using TypeScript, TailwindCSS, React, NextJS, ThreeJS, Framer Motion. This page shows the 3D model and the short text about my love of full-stack development. Let&#39;s work together!' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
