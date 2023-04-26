@@ -28,7 +28,7 @@ export default function projects() {
                 img={projImage1}
                 summary='An application that allows users to comfortably track job applications, keep track of all updates and see their statistics. Created using ReactJS, Express, MongoDB, NodeJS'
                 link='/'
-                github='/'
+                github='https://github.com/muratistek'
               />
             </div>
             <div className='col-span-12'>
@@ -37,7 +37,7 @@ export default function projects() {
                 img={projImage1}
                 summary='An application that allows users to comfortably track job applications, keep track of all updates and see their statistics. Created using ReactJS, Express, MongoDB, NodeJS'
                 link='/'
-                github='/'
+                github='https://github.com/muratistek'
               />
             </div>
             <div className='col-span-12'>
@@ -46,7 +46,7 @@ export default function projects() {
                 img={projImage1}
                 summary='An application that allows users to comfortably track job applications, keep track of all updates and see their statistics. Created using ReactJS, Express, MongoDB, NodeJS'
                 link='/'
-                github='/'
+                github='https://github.com/muratistek'
               />
             </div>
           </div>

@@ -13,8 +13,6 @@ export default function Home() {
       <Head>
         <title>Portfolio Website | Murat Istek</title>
         <meta name='description' content='Portfolio Website made by Murat Istek using TypeScript, TailwindCSS, React, NextJS, ThreeJS, Framer Motion. This page shows the 3D model and the short text about my love of full-stack development. Let&#39;s work together!' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <PageTransitionEffect />
       <main className='flex items-center text-dark dark:text-light min-h-screen w-full'>
@@ -53,7 +51,7 @@ export default function Home() {
                   download={true}
                 >Resume<LinkArrow className={"w-6 ml-1"} /></Link>
                 <Link
-                  href="mailto:istekmurat1996@gmail.com"
+                  href="mailto:muratistekdev@gmail.com"
                   target={'_blank'}
                   className='ml-6 flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light mini-tablet:p-2 mini-tablet:px-4 mini-tablet:text-base'
                 >Contact<EmailIcon className={"w-6 ml-1 hover:fill-dark"} /></Link>

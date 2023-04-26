@@ -20,7 +20,8 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.ico" media='(prefers-color-scheme: dark)' />
+        <link rel="icon" href="/favicon_dark.ico" media='(prefers-color-scheme: light)' />
       </Head>
       <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen dark:bg-dark`}>
         <Navbar />
