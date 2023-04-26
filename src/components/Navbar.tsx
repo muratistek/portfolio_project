@@ -53,7 +53,7 @@ export default function Navbar(): JSX.Element {
           </motion.a>
 
           <button
-            className={`flex items-center justify-center ml-3 rounded-full p-1 ${colorMode !== 'light' ? "bg-light text-dark" : "bg-dark text-light"}`}
+            className={`flex items-center justify-center ml-3 w-8 rounded-full p-1 ${colorMode !== 'light' ? "bg-light text-dark" : "bg-dark text-light"}`}
             onClick={() => {
               if (window.screenY > 0 && colorMode === "light") {
                 let header = document.querySelector('.navbar-select')
@@ -110,7 +110,7 @@ export default function Navbar(): JSX.Element {
             </motion.a>
 
             <button
-              className={`flex items-center justify-center ml-3 rounded-full p-1 ${colorMode !== 'light' ? "bg-light text-dark" : "bg-dark text-light"}`}
+              className={`flex items-center justify-center ml-3 w-8 rounded-full p-1 ${colorMode !== 'light' ? "bg-light text-dark" : "bg-dark text-light"}`}
               onClick={() => setColorMode(colorMode === 'dark' ? 'light' : 'dark')}
             >
 
