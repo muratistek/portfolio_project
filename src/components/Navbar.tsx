@@ -55,7 +55,6 @@ export default function Navbar(): JSX.Element {
           <button
             className={`flex items-center justify-center ml-3 rounded-full p-1 ${colorMode !== 'light' ? "bg-light text-dark" : "bg-dark text-light"}`}
             onClick={() => {
-              console.log(screenY)
               if (window.screenY > 0 && colorMode === "light") {
                 let header = document.querySelector('.navbar-select')
                 header?.classList.add('sticky-style-dark')
