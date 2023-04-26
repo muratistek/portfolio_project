@@ -38,7 +38,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className='flex flex-col w-1/2 items-center self-center pl-8 tablet:w-full tablet:text-center tablet:mb-96'>
+            <div className='flex flex-col w-1/2 items-center self-center pl-8 tablet:pl-0 tablet:w-full tablet:text-center tablet:mb-96'>
               <TextAnimation text='Crafting Digital Experiences Using Coding and Design' className='!text-6xl text-left laptop:!text-5xl tablet:!text-center tablet:!text-6xl mini-tablet:!text-5xl mini-tablet:py-3 mobile:!text-3xl' />
               <p className='my-4 font-medium text-xl mini-tablet:text-sm mobile:text-xs'>
                 Hi! My name is Murat Istek and I am a full-stack developer who enjoys building complex projects using expertise in web technologies and a passion for improving my craft every day. Let&apos;s work together!
