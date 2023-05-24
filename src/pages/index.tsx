@@ -45,15 +45,9 @@ export default function Home() {
               </p>
               <div className='flex items-center self-start mt-4 tablet:self-center'>
                 <Link
-                  href="/test_file_resume.pdf"
-                  target={'_blank'}
-                  className='flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light mini-tablet:p-2 mini-tablet:px-4 mini-tablet:text-base'
-                  download={true}
-                >Resume<LinkArrow className={"!w-6 ml-1"} /></Link>
-                <Link
                   href="mailto:muratistekdev@gmail.com"
                   target={'_blank'}
-                  className='ml-6 flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light mini-tablet:p-2 mini-tablet:px-4 mini-tablet:text-base'
+                  className='flex items-center bg-dark dark:bg-light text-light dark:text-dark p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light border-2 border-solid border-transparent hover:border-dark hover:dark:border-light mini-tablet:p-2 mini-tablet:px-4 mini-tablet:text-base'
                 >Contact<EmailIcon className={"!w-6 ml-1 hover:fill-dark"} /></Link>
               </div>
             </div>

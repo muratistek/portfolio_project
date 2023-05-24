@@ -2,7 +2,10 @@ import React from 'react'
 import Head from 'next/head'
 import Layout from '../components/Layout'
 import TextAnimation from '../components/TextAnimation'
-import projImage1 from '../../public/images/project/proj1.jpg'
+import projImage1 from '../../public/images/project/jobzonme_resize50.jpg'
+import projImage2 from '../../public/images/project/form_manager_resized.jpg'
+import projImage3 from '../../public/images/project/employee_manager_resized.jpg'
+import projImage4 from '../../public/images/project/taskpulse_resized.jpg'
 import SpinLogo from '../components/SpinLogo'
 import Project from '../components/Project'
 import PageTransitionEffect from '@/components/PageTransitionEffect'
@@ -24,29 +27,43 @@ export default function projects() {
           <div className='grid grid-cols-12 gap-24 gap-y-28 laptop:gap-x-16 tablet:gap-x-8 mini-tablet:gap-y-24 mobile:gap-x-0'>
             <div className='col-span-12'>
               <Project
-                title='Job Applications Tracker'
+                title='JobzOnMe'
                 img={projImage1}
-                summary='An application that allows users to comfortably track job applications, keep track of all updates and see their statistics. Created using ReactJS, Express, MongoDB, NodeJS'
-                link='/'
-                github='https://github.com/muratistek'
+                summary='JobzOnMe is a powerful web application designed to streamline your job application process. With its intuitive interface and robust features, it empowers users to efficiently track and manage their job applications.'
+                link='https://jobzonme.onrender.com'
+                github='https://github.com/muratistek/JobzOnMe'
+                tech='React, Express, Redux, MongoDB, NodeJS, JWT, MERN'
               />
             </div>
             <div className='col-span-12'>
               <Project
-                title='Job Applications Tracker'
-                img={projImage1}
-                summary='An application that allows users to comfortably track job applications, keep track of all updates and see their statistics. Created using ReactJS, Express, MongoDB, NodeJS'
-                link='/'
-                github='https://github.com/muratistek'
+                title='Form Manager (Backend Project)'
+                img={projImage2}
+                summary='This project simulates multiple instant form submissions, handles specified technologies together, stores and runs backend (NodeJS) on the Docker container, improves DB efficiency by adding Redis layer that caches PostgreSQL queries, incorporates Prisma ORM with PostgreSQL instance containerized by Docker, adds multiple services to a Docker container using Docker Compose.'
+                link='https://form-manager-prod-frontend1.onrender.com'
+                github='https://github.com/muratistek/form-manager-backend-project'
+                tech='NodeJS, Docker, PostgreSQL, Redis, GraphQL, TypeScript, React, Prisma, MaterialUI'
+                warning='This project runs on 4 separate free-tier services (Redis, PostgreSQL, backend, frontend). Due to the hosting plan limitation, it can take up to 40 seconds for a project to load.'
               />
             </div>
             <div className='col-span-12'>
               <Project
-                title='Job Applications Tracker'
-                img={projImage1}
-                summary='An application that allows users to comfortably track job applications, keep track of all updates and see their statistics. Created using ReactJS, Express, MongoDB, NodeJS'
-                link='/'
-                github='https://github.com/muratistek'
+                title='Employee Management App'
+                img={projImage3}
+                summary='Introducing my web application project — an employee records management tool. Leveraging the robust MEAN stack — MongoDB, Express, Angular, and NodeJS; I&#39;ve developed a seamless and efficient system to handle employee data. With GraphQL, data querying and manipulation become a breeze, enabling lightning-fast performance and precise data retrieval.'
+                link='https://employeemanagementapp.vercel.app'
+                github='https://github.com/muratistek/employee-management-app-angular'
+                tech='Angular, GraphQL, MongoDB, Express and NodeJS'
+              />
+            </div>
+            <div className='col-span-12'>
+              <Project
+                title='TaskPulse'
+                img={projImage4}
+                summary='TaskPulse is a web-based project management application designed to help teams efficiently manage their projects. It provides features such as ticket creation, task assignment, and commenting. Team members can collaborate effectively and track project progress. Additionally, TaskPulse offers customization options, including the ability to change the app theme to suit individual preferences.'
+                link='https://taskpulse.web.app'
+                github='https://github.com/muratistek/task-pulse'
+                tech='React, Firebase, Firestore NoSQL'
               />
             </div>
           </div>

@@ -44,7 +44,7 @@ export default function Navbar(): JSX.Element {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href='https://linkedin.com'
+            href='https://www.linkedin.com/in/muratistek'
             target={'_blank'}
             className='w-6 mx-3'
             whileHover={{ y: -2 }}

@@ -7,4 +7,6 @@ export default interface ProjectProps {
   img: StaticImageData
   link: string
   github: string
+  tech: string
+  warning?: string
 }

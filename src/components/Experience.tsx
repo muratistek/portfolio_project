@@ -14,7 +14,7 @@ export default function Experience(): JSX.Element {
   )
 
   return (
-    <div className='my-64'>
+    <div className='my-40'>
       <h2 className='font-bold text-8xl mb-32 w-full text-center mini-tablet:text-6xl mini-mobile:text-4xl mini-tablet:mb-16'>Experience</h2>
 
       <div ref={ref} className='w-[75%] mx-auto relative tablet:w-[90%] mini-tablet:w-full'>
@@ -27,11 +27,11 @@ export default function Experience(): JSX.Element {
             company='Enzo | Food App'
             time='2022 - Current'
             address='Toronto, ON'
-            work='Implemented authentication and authorization for login / sign up pages. Incorporated business idea and logic into the application. Handled proper QR code scanning with database connection. Worked on application hosting on the cloud. Worked on design UI/UX mockups for the front-end part' />
+            work='Implemented authentication and authorization improving app security. Incorporated business idea and logic into the application. Handled proper QR code scanning with a database connection. Performed application deployment and cloud hosting configuration. Worked on design UI/UX mockups for the application front-end' />
 
           <ExperienceDetails
             position='Full Stack Developer'
-            company="Cimsa"
+            company="Ozer Trade Co. Ltd."
             time='2023'
             address='Istanbul, Turkey'
             work='Configured Apache server to establish a secure connection using SSL certificate and HTTPS protocol. Reduced website loading time by optimizing requests and responses. Updated the front-end to improve conversion rates'

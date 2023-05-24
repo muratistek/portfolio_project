@@ -22,10 +22,10 @@ export default function about() {
       <PageTransitionEffect />
       <main className='flex justify-center items-center w-full flex-col dark:text-light'>
         <Layout className='pt-16'>
-          <TextAnimation text='Passion Fuels Purpose' className='mb-16 tablet:!text-7xl mobile:!text-6xl mini-mobile:!text-4xl mobile:mb-7' />
+          <TextAnimation text='About Me' className='mb-16 tablet:!text-7xl mobile:!text-6xl mini-mobile:!text-4xl mobile:mb-7' />
           <div className='grid w-full grid-cols-8 gap-16 mobile:gap-8 '>
-            <div className='col-start-1 col-end-5  flex flex-col items-start justify-start laptop:col-span-4 mini-tablet:order-2 mini-tablet:col-span-8'>
-              <h2 className='mb-4 text-lg uppercase text-dark/75 font-bold dark:text-light/75'>About Me</h2>
+            <div className='col-start-1 col-end-5  flex flex-col items-start justify-start laptop:col-span-4 mini-tablet:order-2 mini-tablet:col-span-8 mt-6 laptop:mt-0'>
+              <h2 className='mb-4 text-lg uppercase text-dark/75 font-bold dark:text-light/75'>Who I Am</h2>
               <div className='font-medium'>
                 <p>
                   Hi, my name is <b>Murat Istek</b> and I am a <b>full-stack developer</b> who enjoys building attractive and complex applications using critical thinking, attention to detail, creativity and knowledge. Using my experience in the field and aspiration for perfection, I always look for the best and latest solutions to meet the needs of businesses and users alike.
@@ -56,7 +56,7 @@ export default function about() {
             <div className='col-start-7 col-end-9 flex items-end justify-between flex-col laptop:col-span-8 laptop:flex-row laptop:items-center mini-tablet:order-3'>
               <div className='flex flex-col items-end justify-center laptop:items-center'>
                 <span className='inline-block text-7xl font-bold mini-tablet:text-6xl mobile:text-5xl mini-mobile:text-4xl'>
-                  <NumberAnimation value={20} />+
+                  <NumberAnimation value={30} />+
                 </span>
                 <h2 className='font-medium text-lg desktop:text-base capitalize text-dark/75 dark:text-light/75 laptop:text-center mini-tablet:text-lg mobile:text-base mini-mobile:text-sm'>completed projects</h2>
               </div>
@@ -79,6 +79,7 @@ export default function about() {
           <LazyLoad>
             <Tech />
           </LazyLoad>
+          <hr />
           <Experience />
           <hr />
           <Education />

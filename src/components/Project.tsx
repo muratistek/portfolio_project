@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 const FramerImage = motion(Image)
 
-export default function Project({ title, summary, img, link, github }: ProjectProps): JSX.Element {
+export default function Project({ title, summary, img, link, github, tech, warning }: ProjectProps): JSX.Element {
 
   return (
     <article className='relative flex items-center justify-between w-full bg-light dark:bg-dark shadow-2xl rounded-3xl border border-solid border-dark dark:border-light p-12 rounded-br-2xl tablet:flex-col tablet:p-8 mini-mobile:rounded-2xl mini-mobile:rounded-br-3xl mini-mobile:p-4'>
@@ -32,6 +32,8 @@ export default function Project({ title, summary, img, link, github }: ProjectPr
           <h2 className='my-2 pb-2 w-full text-left text-4xl font-bold dark:text-light mobile:text-sm'>{title}</h2>
         </Link>
         <p className='my-2 pb-2 font-medium text-dark dark:text-light'>{summary}</p>
+        <p className="my-2 pb-2 font-medium text-dark dark:text-light">Used Technologies: <b>{tech}</b></p>
+        {warning && <p className="my-2 pb-2 font-medium text-dark dark:text-light"><b>Warning: </b>{warning}</p>}
         <div className='flex items-center mt-2'>
           <Link href={github} target='_blank' className='w-10'>
             <GithubIcon />

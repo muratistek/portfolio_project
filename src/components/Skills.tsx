@@ -13,26 +13,31 @@ export default function Skills(): JSX.Element {
           Web
         </motion.div>
 
+        {/* The List of Skills */}
         <Skill name="CSS" x="-11vw" y='-3vw' />
-        <Skill name="Tailwind CSS" x="7vw" y='14vw' />
+        <Skill name="Tailwind CSS" x="0vw" y='15vw' />
         <Skill name="HTML" x="-10vw" y='9vw' />
         <Skill name="JavaScript" x="16vw" y='6vw' />
         <Skill name="TypeScript" x="0vw" y='7vw' />
         <Skill name="React" x="-2vw" y='-7vw' />
-        <Skill name="NodeJS" x="13vw" y='-12vw' />
-        <Skill name="MongoDB" x="23vw" y='-5vw' />
+        <Skill name="NodeJS" x="16vw" y='-11vw' />
+        <Skill name="MongoDB" x="23vw" y='-3vw' />
         <Skill name="Express" x="0vw" y='-15vw' />
         <Skill name="GraphQL" x="-14vw" y='-12vw' />
         <Skill name="REST API" x="-17vw" y='3vw' />
         <Skill name="PHP" x="-22vw" y='-5vw' />
         <Skill name="Python" x="-23vw" y='11vw' />
-        <Skill name="Angular" x="-8vw" y='18vw' />
-        <Skill name="Docker" x="28vw" y='2vw' />
-        <Skill name="NextJS" x="9vw" y='-4vw' />
+        <Skill name="Angular" x="-12vw" y='17vw' />
+        <Skill name="Docker" x="27vw" y='4vw' />
+        <Skill name="NextJS" x="11vw" y='-2vw' />
         <Skill name="Figma" x="22vw" y='12vw' />
         <Skill name="Agile" x="-8vw" y='-18vw' />
         <Skill name="Scrum" x="-29vw" y='2vw' />
         <Skill name="C#" x="9vw" y='-18vw' />
+        <Skill name="Redux" x="12vw" y='17vw' />
+        <Skill name="PostgreSQL" x="7vw" y='-10vw' />
+        <Skill name="Prisma" x="-24vw" y='-11vw' />
+        <Skill name="Firebase" x="26vw" y='-9vw' />
       </div>
     </>
   )
